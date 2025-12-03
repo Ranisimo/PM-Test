@@ -8,7 +8,7 @@ export default function Footer() {
       </div>
       <div className="quick-info">
         <div className="about-info">
-          <img className="about-info-logo" src="/premiermarkets.svg" alt="Main logo" />
+          <img className="about-info-logo" src="/logoLight.svg" alt="Main logo" />
           <p className="about-text urbanist-400">CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 21.38% of retail investor accounts generate profits when trading CFDs with this provider. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money.</p>
           <img className="about-info-socials" src="/socials.svg" alt="Main logo" />
         </div>

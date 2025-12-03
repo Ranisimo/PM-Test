@@ -68,6 +68,75 @@ body {
   height: 130px;
 }
 
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0px 20px;
+}
+
+.title, .header-text {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.dark-text {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 14px;
+  line-height: 19.98px;
+  color: #000000;
+}
+
+.separator {
+  color: #D6D6D6;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 1px solid #C9C9C9
+}
+
+.nav-bar {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  display: flex;
+  gap: 32px;
+  color: #010205;
+}
+
+.register-login {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.register-button {
+  background: #ED1D25;
+  border-radius: 20px;
+  padding: 10px 24px;
+  width: 101px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Splash section */
 .splash-image {
  background: linear-gradient(102.87deg, #320002 -27.78%, #900006 2.52%);
  width: 100vw;
