@@ -165,10 +165,285 @@ body {
   height: 987;
 }
 
+/* Seamless Withdrawals section */
 .seamless-withdrawals-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #FFFFFF;
   width: 100vw;
   height: 991;
+}
+
+.seamless-wthdrawals-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+.seamless-wthdrawals-header-title {
+  font-family: "Urbanist", sans-serif;
+  /* font-family: Gilroy-Bold; */
+  font-weight: 400;
+  font-style: bold;
+  font-size: 62px;
+  line-height: 68px;
+  letter-spacing: -4%;
+  text-align: center;
+}
+
+/* Daily Updates section */
+.daily-updates-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF7F7 43.1%, #FFFFFF 77.95%);
+  width: 100vw;
+  height: 991;
+  gap: 36px;
+}
+
+.daily-news-updates-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75vw;
+}
+
+.daily-updates-header-title, .seamless-wthdrawals-header-subtitle {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 18px;
+  line-height: 26.5px;
+  color: #FF0000;
+}
+
+.daily-updates-header-title {
+  padding-left: 10px;
+}
+
+.daily-updates-header-text {
+  font-family: "Urbanist", sans-serif;
+  /* font-family: Gilroy-Bold; */
+  font-weight: 400;
+  font-style: bold;
+  font-size: 48px;
+  line-height: 50px;
+  letter-spacing: -1%;
+  color: #000000;
+}
+
+.daily-updates-view-all {
+  color: #FF0000;
+}
+
+.daily-updates-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 32px;
+}
+
+.daily-updates-news {
+  width: 276px;
+  height: 455px;
+  box-shadow: 0px 2.77px 2.21px 0px #00000005;
+  box-shadow: 0px 6.65px 5.32px 0px #00000007;
+  box-shadow: 0px 12.52px 10.02px 0px #00000009;
+  box-shadow: 0px 22.34px 17.87px 0px #0000000B;
+  box-shadow: 0px 41.78px 33.42px 0px #0000000D;
+  box-shadow: 0px 100px 80px 0px #00000012;
+}
+
+.daily-updates-news-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.daily-updates-news-content {
+  display: flex;
+  flex-direction: column;
+  width: 277px;
+  height: 261px;
+  gap: 15px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.daily-updates-news-date {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #BDBDBD;
+}
+
+.daily-updates-news-title {
+  font-family: "Urbanist", sans-serif;
+  /* font-family: Gilroy-Bold; */
+  font-weight: 400;
+  font-style: bold;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  color: #252B42;
+}
+
+.daily-updates-news-text {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.daily-updates-news-read-more {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #ED1D25;
+}
+
+.daily-updates-video {
+  width: 877;
+  height: 455;
+  top: 221px;
+  left: 443px;
+  border-width: 1px;
+  border-radius: 36px;
+  box-shadow: 0px 2.77px 2.21px 0px #00000005;
+  box-shadow: 0px 6.65px 5.32px 0px #00000007;
+  box-shadow: 0px 12.52px 10.02px 0px #00000009;
+  box-shadow: 0px 22.34px 17.87px 0px #0000000B;
+  box-shadow: 0px 41.78px 33.42px 0px #0000000D;
+  box-shadow: 0px 100px 80px 0px #00000012;
+}
+
+.daily-updates-banner-container {
+  border-radius: 20px;
+  box-shadow: 0px 2.77px 2.21px 0px #00000005;
+  box-shadow: 0px 6.65px 5.32px 0px #00000007;
+  box-shadow: 0px 12.52px 10.02px 0px #00000009;
+  box-shadow: 0px 22.34px 17.87px 0px #0000000B;
+  box-shadow: 0px 41.78px 33.42px 0px #0000000D;
+  box-shadow: 0px 20px 80px 0px #00000012;
+}
+
+.daily-updates-banner-img {
+  border-radius: 20px;
+}
+
+/* Testimonials section */
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  width: 100vw;
+  padding-bottom: 100px;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px;
+}
+
+.testimonials-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-style: semi-bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #000000;
+  gap: 16px;
+}
+
+.testimonials-subtext {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #A8A6B1
+}
+
+.testimonials-scroll {
+  display: flex;
+  justify-content: center;
+  width: 1248.81005859375px;
+  gap: 16px;
+}
+
+.testimonials-scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F0F2F5;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+}
+
+.testimonials-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  width: 394;
+  border-width: 1px;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.register-fund-start-trading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #BE050D 0%, #580000 100%);
+  width: 1200px;
+  height: 371px;
+  border-radius: 32px;
+  margin-top: 24px;
+  margin-bottom: 80px;
 }
 
 /* Footer component */
@@ -187,13 +462,25 @@ body {
   height: 48px;
 }
 
-.pay-options {
+.pay-options-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 195;
   border-bottom: 1px solid #FFFFFF;
+}
+
+.pay-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38.19px;
+  gap: 50px;
+}
+
+.pay-options-img {
+  cursor: pointer;
 }
 
 .quick-info {
@@ -237,10 +524,23 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-wrap: nowrap;
+  height: 24px;
+  margin-bottom: 20px;
 }
 
 li, .about-text {
   opacity: 60%;
+}
+
+li {
+  cursor: pointer;
+}
+
+ul {
+  text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer-warning {

@@ -2,9 +2,19 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="red-border"></div>
-      <div className="pay-options">
-        <img src="/payoptions.svg"
-            alt="Pay Options logo"/>
+      <div className="pay-options-container">
+        <div className="pay-options">
+          <img className="pay-options-img" src="/paypal.png"
+              alt="PayPal logo" style={{height: "31.32px"}}/>
+          <img className="pay-options-img" src="/mastercard.png"
+              alt="Mastercard logo" style={{height: "38.19px"}}/>
+          <img className="pay-options-img" src="/skrill.svg"
+              alt="Skrill logo"/>
+          <img className="pay-options-img" src="/applePay.svg"
+              alt="ApplePay logo"/>
+          <img className="pay-options-img" src="/visa.svg"
+              alt="Visa logo"/>
+        </div>
       </div>
       <div className="quick-info">
         <div className="about-info">
