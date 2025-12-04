@@ -20,6 +20,19 @@
   }
 }
 
+.df-fc-ac-jc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.df-ac-jc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .urbanist-400 {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
@@ -167,19 +180,12 @@ body {
 
 /* Seamless Withdrawals section */
 .seamless-withdrawals-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: #FFFFFF;
   width: 100vw;
   height: 991;
 }
 
 .seamless-wthdrawals-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: #000000;
 }
 
@@ -196,10 +202,6 @@ body {
 
 /* Daily Updates section */
 .daily-updates-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(180deg, #FFFFFF 0%, #FFF7F7 43.1%, #FFFFFF 77.95%);
   width: 100vw;
   height: 991;
@@ -242,9 +244,6 @@ body {
 }
 
 .daily-updates-cards-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 45px;
   margin-top: 32px;
 }
@@ -351,29 +350,17 @@ body {
 
 /* Testimonials section */
 .testimonials-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: #FFFFFF;
   width: 100vw;
   padding-bottom: 100px;
 }
 
 .testimonials {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 16px;
   margin: 40px;
 }
 
 .testimonials-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 500px;
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
@@ -402,9 +389,6 @@ body {
 }
 
 .testimonials-scroll-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #F0F2F5;
   width: 36px;
   height: 36px;
@@ -412,17 +396,10 @@ body {
 }
 
 .testimonials-card-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
 .card-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   gap: 30px;
 }
 
@@ -435,9 +412,6 @@ body {
 }
 
 .register-fund-start-trading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: linear-gradient(90deg, #BE050D 0%, #580000 100%);
   width: 1200px;
   height: 371px;
@@ -448,9 +422,6 @@ body {
 
 /* Footer component */
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100vw;
   height: 891;
   background: #000000;
@@ -463,18 +434,12 @@ body {
 }
 
 .pay-options-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 195;
   border-bottom: 1px solid #FFFFFF;
 }
 
 .pay-options {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 38.19px;
   gap: 50px;
 }
@@ -544,10 +509,6 @@ ul {
 }
 
 .footer-warning {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   line-height: 150%;
   text-align: center;
   color: #FFFFFF99;
@@ -558,9 +519,6 @@ ul {
 }
 
 .footer-copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-top: 1px solid #FFFFFF;
   width: 100vw;
   padding: 24px;

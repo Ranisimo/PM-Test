@@ -35,13 +35,13 @@ export default function Home() {
         </section>
         <section className="empower-section">
         </section>
-        <section className="seamless-withdrawals-section">
-          <div className="seamless-wthdrawals-header">
+        <section className="seamless-withdrawals-section df-fc-ac-jc">
+          <div className="seamless-wthdrawals-header df-fc-ac-jc">
             <p className="seamless-wthdrawals-header-subtitle">Access your funds anytime, anywhere.</p>
             <p className="seamless-wthdrawals-header-title">Seamless Withdrawals</p>
           </div>
         </section>
-        <section className="daily-updates-section">
+        <section className="daily-updates-section df-fc-ac-jc">
           <div className="daily-updates-header">
             <div>
               <p className="daily-updates-header-title">Daily Updates</p>
@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <div className="daily-updates-view-all"><p>View all</p></div>
           </div>
-          <div className="daily-updates-cards-container">
+          <div className="daily-updates-cards-container df-ac-jc">
             <div className="daily-updates-news">
               <img className="daily-updates-news-img" src="/newsImg.svg"/>
               <div className="daily-updates-news-content">
@@ -63,35 +63,35 @@ export default function Home() {
           </div>
           <div className="daily-updates-banner-container"><img className="daily-updates-banner-img" src="/banner.svg" /></div>
         </section>
-        <section className="testimonials-section">
-          <div className="testimonials">
-            <div className="testimonials-header">
+        <section className="testimonials-section df-fc-ac-jc">
+          <div className="testimonials df-fc-ac-jc">
+            <div className="testimonials-header df-fc-ac-jc">
               <p className="testimonials-header-text">What <span style={{color: "#ED1D25"}}>Premier</span> Traders are saying about us</p>
               <p className="testimonials-subtext">Join a growing community of professionals who rely on our platform to trade smarter every day.</p>
             </div>
             <div className="testimonials-scroll">
-              <div className="testimonials-scroll-button"><img src="/leftArrow.svg" alt="Left arrow"/></div>
-              <div className="testimonials-scroll-button"><img src="/rightArrow.svg" alt="Right arrow"/></div>
+              <div className="testimonials-scroll-button df-ac-jc"><img src="/leftArrow.svg" alt="Left arrow"/></div>
+              <div className="testimonials-scroll-button df-ac-jc"><img src="/rightArrow.svg" alt="Right arrow"/></div>
             </div>
-            <div className="testimonials-card-container">
-              <div className="card-container">
+            <div className="testimonials-card-container df-ac-jc">
+              <div className="card-container df-fc-ac-jc">
                 <Card />
                 <Card />
                 <Card />
               </div>
-              <div className="card-container">
+              <div className="card-container df-fc-ac-jc">
                 <Card />
                 <Card />
                 <Card />
               </div>
-              <div className="card-container">
+              <div className="card-container df-fc-ac-jc">
                 <Card />
                 <Card />
                 <Card />
               </div>
             </div>
           </div>
-          <div className="register-fund-start-trading">
+          <div className="register-fund-start-trading df-ac-jc">
 
           </div>
         </section>
