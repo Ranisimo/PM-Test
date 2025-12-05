@@ -3,7 +3,7 @@ export default function Header() {
     <header className="header">
       <div className="top-header">
         <div className="title"><span style={{color : "#ED1D25"}}>Personal</span><span className="separator">|</span><span style={{color: "#151515"}}>Institutional</span></div>
-        <div className="header-text"><span className="dark-text">WebTrader</span><span className="separator">|</span><span className="dark-text">Support</span><span className="separator">|</span><span className="dark-text">Open Demo</span></div>
+        <div className="header-text"><span className="dark-text">WebTrader</span><span className="separator">|</span><span className="dark-text">Support</span><span className="separator">|</span><span className="dark-text">Open Demo</span><span className="separator">|</span><img style={{width: "30px", height: "30px"}} src="/language.png" /><span className="dark-text">EN</span></div>
       </div>
       <div className="bottom-header">
         <img src="/logoDark.svg" alt="Main logo" />

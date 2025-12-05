@@ -16,7 +16,8 @@
 .title, .header-text {
   display: flex;
   align-items: center;
-  gap: 10px
+  gap: 10px;
+  cursor: pointer;
 }
 
 .dark-text {
