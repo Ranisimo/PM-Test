@@ -6,6 +6,7 @@
   align-items: center;
 }
 
+/* Premier Markets Home section */
 .start-section {
   background: linear-gradient(102.87deg, #320002 -27.78%, #900006 2.52%);
 }
@@ -134,7 +135,7 @@
   gap: 24px;
 }
 
-/* Overlay container for splash images */
+/* Overlay container for splash image */
 .splash-overlay-container {
   position: relative;
   width: 100vw;
@@ -151,12 +152,6 @@
   position: absolute;
   top: 800px;
   width: 100vw;
-}
-
-/* Splash section */
-.splash-image {
- background: linear-gradient(102.87deg, #320002 -27.78%, #900006 2.52%);
- width: 100vw;
 }
 
 .splash-image-overlay {
