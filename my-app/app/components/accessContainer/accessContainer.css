@@ -1,0 +1,69 @@
+.access-card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 12px 24px;
+  background-color: #FFFFFF;
+  width: 262px;
+  height: 312px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: none;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.access-card-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 40px;
+  padding: 2px;
+  background: linear-gradient(180deg, #FFE6E7 0%, #ED1D25 62.02%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.access-card-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.access-card-container:hover {
+  transform: translateY(-24px);
+}
+
+.access-card-img {
+  width: 50px;
+  height: 50px;
+}
+
+.access-card-title {
+  color: #1F1F1F;
+  font-family: var(--font-gilroy-bold);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 130%;
+}
+
+.access-card-description {
+  color: #1F1F1F;
+  font-family: 'Urbanist';
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.access-card-button {
+  width: 39;
+  height: 39;
+  top: 250px;
+  left: 37px;
+  angle: -180 deg;
+  border-radius: 64.97px;
+  cursor: pointer;
+}
