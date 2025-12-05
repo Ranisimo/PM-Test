@@ -5,7 +5,62 @@
 .card {
   width: 394;
   border-width: 1px;
-  gap: 16px;
   border-radius: 16px;
   padding: 30px;
+}
+
+.card-description {
+  font-family: 'Urbanist';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.card-divider {
+  position: relative;
+  height: 0;
+  width: 100%;
+  margin: 24px 0;
+  border: none;
+}
+
+.card-divider::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  border-radius: 1px;
+  background: linear-gradient(90deg, #FFC4C6 0%, #FFC8CA 100%);
+}
+
+.card-user-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  gap: 16px;
+}
+
+.card-user-name-container {
+  display: flex;
+  font-family: var(--font-gilroy-bold);
+  font-weight: 400;
+  color: #000000;
+  gap: 12px;
+}
+
+.card-user-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #1E1E1E;
+  border-radius: 100%;
+  font-family: 'Inter';
+  color: #FFFFFF;
 }
