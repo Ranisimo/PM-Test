@@ -11,6 +11,29 @@
   background: linear-gradient(102.87deg, #320002 -27.78%, #900006 2.52%);
 }
 
+.start-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 900px;
+  gap: 60px;
+}
+
+.start-section-title-container {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 80px;
+  width: 25%;
+  margin-bottom: 200px;
+  gap: 24px;
+}
+
+.start-button-container {
+  display: flex;
+  gap: 16px;
+  padding-top: 25px;
+}
+
 .start-title {
   font-family: var(--font-gilroy-bold);
   font-weight: 400;
@@ -28,6 +51,8 @@
 }
 
 .start-button-main, .start-button {
+  font-family: 'Urbanist';
+  font-weight: 600;
   text-wrap: nowrap;
   padding-top: 14px;
   padding-right: 34px;
@@ -38,6 +63,7 @@
 }
 
 .start-button-main {
+  color: #ED1D25;
   width: 164;
   height: 53;
   background-color: #FFFFFF;
@@ -47,6 +73,29 @@
   width: 200px;
   height: 53px;
   border: 2px solid #FFFFFF
+}
+
+.start-section-image-container {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 655px;
+}
+
+.start-section-image {
+  position: absolute;
+  right: 210px;
+  top: 75%;
+  transform: translateY(-50%);
+  height: 90%;
+}
+
+.start-section-image-mock {
+  position: absolute;
+  top: 55%;
+  right: -10px;
+  transform: translateY(-50%);
+  height: 90%;
 }
 
 /* Access section */
@@ -139,7 +188,7 @@
 .splash-overlay-container {
   position: relative;
   width: 100vw;
-  height: 1045px;
+  height: 100%;
 }
 
 .splash-overlay-container .splash-image {
@@ -150,7 +199,7 @@
 
 .splash-overlay-container .splash-image-overlay {
   position: absolute;
-  top: 800px;
+  top: -243px;
   width: 100vw;
 }
 
@@ -160,40 +209,52 @@
   width: 100vw;
 }
 
-/* Second section */
+/* Info section */
 .section-image {
   width: 100vw;
 }
 
 .info-section {
   background: #FFFFFF;
-  height: 2360;
+  height: 2000;
   justify-content: space-around;
 }
 
 .info-header {
   display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-bottom: 200px;
 }
 
 .info-text-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  width: 45%;
+  gap: 24px;
 }
 
-.info-title {
+.info-title, .info-title-markets {
   color: #000000;
   font-family: var(--font-gilroy-bold);
   font-weight: 400;
   font-size: 62px;
   line-height: 97%;
+  width: 30%;
 }
 
-.info-description {
+.info-description, .info-description-markets {
   color: #232323;
   font-family: 'Urbanist';
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+}
+
+.info-button-container {
+  display: flex;
+  gap: 24px;
 }
 
 .info-button-main {
@@ -236,6 +297,38 @@
   cursor: pointer;
 }
 
+.info-banner {
+  width: 80%;
+  height: 259;
+  top: 550px;
+  left: 137px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #ED1D25 0%, #940006 100%);
+}
+
+.info-markets-container {
+  gap: 24px;
+}
+
+.info-markets-header {
+  gap: 24px;
+}
+
+.info-title-markets {
+  text-align: center;
+  width: 100%;
+}
+
+.info-description-markets {
+  text-align: center;
+  width: 66%;
+  color: #A8A6B1;
+}
+
+.info-section-image {
+  margin-top: 50px;
+}
+
 /* Empower section */
 .empower-section {
   background: #111111;
@@ -263,6 +356,7 @@
 
 .seamless-withdrawals-info-container {
   display: flex;
+  justify-content: space-around;
   height: 504px;
   background: linear-gradient(102.54deg, #FFDFDF -11.21%, #FFFCFC 23.26%, #FFD5D6 95.34%);
   border-radius: 20px;
@@ -272,7 +366,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 361px;
+  width: 45%px;
   padding: 50px;
 }
 
@@ -321,7 +415,7 @@
 /* Daily Updates section */
 .daily-updates-section {
   background: linear-gradient(180deg, #FFFFFF 0%, #FFF7F7 43.1%, #FFFFFF 77.95%);
-  height: 991;
+  height: 991px;
   gap: 36px;
 }
 
@@ -368,17 +462,15 @@
 }
 
 .daily-updates-news {
-  width: 276px;
-  height: 455px;
-  box-shadow: 0px 2.77px 2.21px 0px #00000005;
-  box-shadow: 0px 6.65px 5.32px 0px #00000007;
-  box-shadow: 0px 12.52px 10.02px 0px #00000009;
-  box-shadow: 0px 22.34px 17.87px 0px #0000000B;
-  box-shadow: 0px 41.78px 33.42px 0px #0000000D;
+  width: 15%;
+  height: 100%;
   box-shadow: 0px 100px 80px 0px #00000012;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .daily-updates-news-img {
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -386,8 +478,6 @@
 .daily-updates-news-content {
   display: flex;
   flex-direction: column;
-  width: 277px;
-  height: 261px;
   gap: 15px;
   padding-top: 20px;
   padding-right: 25px;
@@ -427,7 +517,6 @@
 .daily-updates-news-read-more {
   font-family: "Urbanist", sans-serif;
   font-weight: 600;
-  font-style: semi-bold;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
@@ -436,28 +525,21 @@
 }
 
 .daily-updates-video {
-  width: 877;
-  height: 455;
-  top: 221px;
-  left: 443px;
+  height: 100%;
   border-width: 1px;
   border-radius: 36px;
-  box-shadow: 0px 2.77px 2.21px 0px #00000005;
-  box-shadow: 0px 6.65px 5.32px 0px #00000007;
-  box-shadow: 0px 12.52px 10.02px 0px #00000009;
-  box-shadow: 0px 22.34px 17.87px 0px #0000000B;
-  box-shadow: 0px 41.78px 33.42px 0px #0000000D;
   box-shadow: 0px 100px 80px 0px #00000012;
 }
 
+.daily-updates-video-thumbnail {
+  height: 100%;
+}
+
 .daily-updates-banner-container {
+  display: flex;
+  justify-content: center;
   border-radius: 20px;
-  box-shadow: 0px 2.77px 2.21px 0px #00000005;
-  box-shadow: 0px 6.65px 5.32px 0px #00000007;
-  box-shadow: 0px 12.52px 10.02px 0px #00000009;
-  box-shadow: 0px 22.34px 17.87px 0px #0000000B;
-  box-shadow: 0px 41.78px 33.42px 0px #0000000D;
-  box-shadow: 0px 20px 80px 0px #00000012;
+  box-shadow: 0px 100px 80px 0px #00000012;
 }
 
 .daily-updates-banner-img {
@@ -516,6 +598,11 @@
 }
 
 .testimonials-card-container {
+  gap: 30px;
+}
+
+.card-ctontainer {
+  display: flex;
   gap: 30px;
 }
 

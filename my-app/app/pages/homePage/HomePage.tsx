@@ -1,8 +1,8 @@
-import Card from "@/app/components/card/Card";
 import CurrencyButtons from "@/app/components/currencyButtons/CurrencyButtons";
 import AccessContainer from "@/app/components/accessContainer/AccessContainer";
+import CardGrid from "app/components/card/CardGrid";
 
-// Mock data for currency buttons
+// Mock data for currency buttons, would be replaced with currencyData recieved from API/Backend 
 let currencyJSON = [
   {
     "currency": "USD/EUR",
@@ -34,9 +34,67 @@ let currencyJSON = [
   }
 ];  
 
+// Mock data for testimonials, data would ideally come from an API/backend database and initials would be generated from the name via a function
+let userJSON = [
+  {
+    "initials": "AK",
+    "name": "Adam Keller",
+    "source": "headset",
+    "description": "I’m new in trading and I really like that Premier let me start small. I can trade crypto and few other assets easy. Withdrawls are quick too. Help Center is simple to use and I learned a lot from there."
+  },
+  {
+    "initials": "ML",
+    "name": "Marco Lazzari",
+    "source": "world",
+    "description": "My experince with PM is perfect so far. Payouts come same day few hours max. Works good with both crypto and credit card. You can take money out many times per day and no hidden fees. Spreads are ok too 😊"
+  },
+  {
+    "initials": "TA",
+    "name": "TradeAce",
+    "source": "headset",
+    "description": "Good service ☺️ Never had a single problem with withdraw. Usually takes under 24 hours. You get update when it’s submitted and when it’s done. Got many assets to trade and the spreads are not bad. And mT5  Thank you!"
+  },
+  {
+    "initials": "LV",
+    "name": "Lucas Vermeer",
+    "source": "headset",
+    "description": "Premier works well for me. KYC was fast and support people (Thx milos!!) 🤗 helped me right away when I had a question. I was able to deposit and start trading in same day. Withdrawal came to my bank after 2 days. All smooth."
+  },
+  {
+    "initials": "PL",
+    "name": "Petar Ilic",
+    "source": "email",
+    "description": "I think Premier’s trading cost are low compare to others. Spreads are good on most pairs, deposit is free, for withdraw they have a small fee but it’s fine. Thanks guys"
+  },
+  {
+    "initials": "SK",
+    "name": "Shivani Kaur",
+    "source": "world",
+    "description": "Multiple withdraws made, all success. Used both bank and international transfer. Also few friends joined from my referral and no issue for them. Been here long time, still all fine."
+  },
+  {
+    "initials": "DL",
+    "name": "David Lorens",
+    "source": "email",
+    "description": "Been using Premier for about 3 months now. Card deposits go through right away and show in balance within a minute. I withdraw my profit each month and it’s always in my bank by end of day. Very happy."
+  },
+  {
+    "initials": "MR",
+    "name": "Mark 'Clips' Renard",
+    "source": "email",
+    "description": "Premier is a serious broker. Web platform looks nice and runs good. Support reply quick and helpful. Sometimes small slippage in busy time but nothing crazy. Commisions are low so I stay here."
+  },
+  {
+    "initials": "MD",
+    "name": "Mateusz Durek",
+    "source": "email",
+    "description": "Deposit and withdraws are fast. One time my payout came before my bank even show the deduction lol. Trade speed is good and data feed fast too. Feels like pro level broker."
+  },
+];  
+
 export default function HomePage() {
 
-  // Mock useEffect and useState to fetch currency data from an API
+  // Mock useEffect and useState to fetch currency data from an API, functions may even be split into a seperate custom hook and called directly
   //  const [currencyData, setCurrencyData] = useState(null);
 
   //   useEffect(() => {
@@ -56,11 +114,29 @@ export default function HomePage() {
     <div className="homepage">
       <main>
         <section className="start-section">
-          <p className="start-title">Trade Forex with Premier Markets</p>
-          <p className="start-description">Access global markets with advanced trading tools, competitive spreads, and institutional grade execution.</p>
-          <div>
-            <button className="start-button-main"><span style={{color: '#ED1D25'}}>Start Trading</span></button>
-            <button className="start-button">Try Demo Account</button>
+          <div className="start-section-container">
+            <div className="start-section-title-container df-fc-ac-jc">
+              <p className="start-title">Trade Forex with Premier Markets</p>
+              <p className="start-description">Access global markets with advanced trading tools, competitive spreads, and institutional grade execution.</p>
+              <div className="start-button-container">
+                <button className="start-button-main">Start Trading</button>
+                <button className="start-button">Try Demo Account</button>
+              </div>
+            </div>
+            <div className="start-section-image-container">
+              <div style={{position: 'relative', width: '500px', height: '655px', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', overflow: 'hidden'}}>
+                <img
+                  className="start-section-image"
+                  src="/iPhoneSide.png"
+                  alt="iPhone photo"
+                />
+                <img
+                  className="start-section-image-mock"
+                  src="/iPhoneMock.svg"
+                  alt="iPhone mock"
+                />
+              </div>
+            </div>
           </div>
           <div className="splash-overlay-container">
             <img
@@ -69,7 +145,6 @@ export default function HomePage() {
               alt="White splash overlay"
             />
             <div className="currency-button-container df-ac-jc">
-              {/* currencyJSON would be replaced with currencyData recieved from API/Backend */}
               <CurrencyButtons items={currencyJSON} /> 
             </div>
           </div>
@@ -92,30 +167,34 @@ export default function HomePage() {
           </div>
         </section>
         <section className="info-section df-fc-ac-jc">
-          <div className="info-header">
-            <p className="info-title">Join <span style={{color: "#ED1D25"}}>50,000+</span> traders who trust us</p>
-            <div className="info-text-container"> 
-              <p className="info-description">Experience advanced trading tools, transparent and competitive pricing, lightnaing-fast execution, and dedicated support trusted by traders worldwide.</p>
-              <div>
-                <button className="info-button-main">Start Trading</button>
-                <button className="info-button">Try Demo Account</button>
+          <div className="info-container df-fc-ac-jc">
+            <div className="info-header df-ac-jc">
+              <p className="info-title">Join <span style={{color: "#ED1D25"}}>50,000+</span> traders who trust us</p>
+              <div className="info-text-container"> 
+                <p className="info-description">Experience advanced trading tools, transparent and competitive pricing, lightnaing-fast execution, and dedicated support trusted by traders worldwide.</p>
+                <div className="info-button-container">
+                  <button className="info-button-main">Start Trading</button>
+                  <button className="info-button">Try Demo Account</button>
+                </div>
               </div>
             </div>
-            <div></div>
+            <div className="info-banner"></div>
           </div>
-          <div className="info-markets-header df-fc-ac-jc">
-            <p className="info-title">Our Markets</p>
-            <p className="info-description"><span style={{color: '#A8A6B1'}}>Stay informed with the data that matters, on 17,000+ markets1. Get the latest news, trader sentiment, spreads, price action and much more.</span></p>
+          <div className="info-markets-container df-fc-ac-jc">
+            <div className="info-markets-header df-fc-ac-jc">
+              <p className="info-title-markets">Our Markets</p>
+              <p className="info-description-markets">Stay informed with the data that matters, on 17,000+ markets. Get the latest news, trader sentiment, spreads, price action and much more.</p>
+            </div>
+            <div className="info-button-container">
+              <button className="info-button-main">Most Traded</button>
+              <button className="info-button">Commodities</button>
+              <button className="info-button">Indicies</button>
+              <button className="info-button">Cryptocurrencies</button>
+              <button className="info-button">Shares</button>
+              <button className="info-button">EFTs</button>
+            </div>
+            <img className="info-section-image" src="/graph.svg" alt="Graph"/>
           </div>
-          <div>
-            <button className="info-button-main">Most Traded</button>
-            <button className="info-button">Commodities</button>
-            <button className="info-button">Indicies</button>
-            <button className="info-button">Cryptocurrencies</button>
-            <button className="info-button">Shares</button>
-            <button className="info-button">EFTs</button>
-          </div>
-          <img className="info-section-image" src="/graph.svg" alt="Graph"/>
         </section>
         <section className="empower-section">
         </section>
@@ -167,7 +246,7 @@ export default function HomePage() {
                 <p className="daily-updates-news-read-more">Read more</p>
               </div>
             </div>
-            <div className="daily-updates-video"><img src="/media.svg" /></div>
+            <div className="daily-updates-video"><img className="daily-updates-video-thumbnail" src="/media.svg" /></div>
           </div>
           <div className="daily-updates-banner-container"><img className="daily-updates-banner-img" src="/banner.svg" /></div>
         </section>
@@ -183,19 +262,7 @@ export default function HomePage() {
             </div>
             <div className="testimonials-card-container df-ac-jc">
               <div className="card-container df-fc-ac-jc">
-                <Card />
-                <Card />
-                <Card />
-              </div>
-              <div className="card-container df-fc-ac-jc">
-                <Card />
-                <Card />
-                <Card />
-              </div>
-              <div className="card-container df-fc-ac-jc">
-                <Card />
-                <Card />
-                <Card />
+                <CardGrid users={userJSON} />
               </div>
             </div>
           </div>
